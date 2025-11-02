@@ -1,124 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JC Império - Eletrônicos</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background-color: #111; color: #fff; line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-    header { position: sticky; top: 0; background-color: #000; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
-    header h1 { color: #FFD700; font-size: 28px; }
-    nav a { color: #fff; margin-left: 20px; font-weight: bold; transition: 0.3s; }
-    nav a:hover { color: #FFD700; }
-    .banner { background-color: #222; text-align: center; padding: 80px 20px; }
-    .banner h2 { font-size: 42px; color: #FFD700; margin-bottom: 20px; }
-    .banner p { font-size: 20px; margin-bottom: 30px; }
-    .banner a { background-color: #FFD700; color: #000; padding: 15px 30px; margin: 0 10px; border-radius: 8px; font-weight: bold; transition: 0.3s; }
-    .banner a:hover { opacity: 0.8; }
-    .produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 60px 20px; }
-    .produto { background-color: #1a1a1a; padding: 20px; border-radius: 12px; text-align: center; transition: 0.3s; }
-    .produto:hover { transform: scale(1.05); }
-    .produto img { max-width: 100%; border-radius: 10px; margin-bottom: 15px; }
-    .produto h3 { color: #FFD700; margin-bottom: 10px; }
-    .produto p { margin-bottom: 15px; font-size: 18px; }
-    .produto a { display: inline-block; background-color: #FFD700; color: #000; padding: 10px 20px; border-radius: 6px; font-weight: bold; transition: 0.3s; }
-    .produto a:hover { opacity: 0.8; }
-    .diferenciais { background-color: #222; padding: 60px 20px; text-align: center; }
-    .diferenciais h2 { color: #FFD700; font-size: 32px; margin-bottom: 40px; }
-    .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .card { background-color: #1a1a1a; padding: 25px; border-radius: 12px; width: 220px; transition: 0.3s; }
-    .card:hover { transform: translateY(-5px); }
-    .card h3 { color: #FFD700; margin-bottom: 10px; }
-    .card p { font-size: 16px; }
-    .depoimentos { padding: 60px 20px; text-align: center; }
-    .depoimentos h2 { color: #FFD700; font-size: 32px; margin-bottom: 40px; }
-    .depoimento { background-color: #1a1a1a; padding: 20px; border-radius: 12px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto; }
-    .depoimento p { font-style: italic; margin-bottom: 10px; }
-    .depoimento span { font-weight: bold; color: #FFD700; }
-    .whatsapp-banner { background-color: #FFD700; color: #000; text-align: center; padding: 50px 20px; margin: 60px 0; border-radius: 12px; }
-    .whatsapp-banner a { display: inline-block; background-color: #000; color: #FFD700; padding: 15px 30px; border-radius: 8px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
-    .whatsapp-banner a:hover { opacity: 0.8; }
-    footer { background-color: #000; text-align: center; padding: 30px 20px; color: #fff; }
-    footer a { color: #FFD700; font-weight: bold; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JC Império - Eletrônicos</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+  body { background-color: #111; color: #fff; line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+  header { position: sticky; top: 0; background-color: #000; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+  header h1 { color: #FFD700; font-size: 28px; }
+  nav a { color: #fff; margin-left: 20px; font-weight: bold; transition: 0.3s; }
+  nav a:hover { color: #FFD700; }
+  .banner { background-color: #222; text-align: center; padding: 80px 20px; }
+  .banner h2 { font-size: 42px; color: #FFD700; margin-bottom: 20px; }
+  .banner p { font-size: 20px; margin-bottom: 30px; }
+  .banner a { background-color: #FFD700; color: #000; padding: 15px 30px; margin: 0 10px; border-radius: 8px; font-weight: bold; transition: 0.3s; }
+  .banner a:hover { opacity: 0.8; }
+  .produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 60px 20px; }
+  .produto { background-color: #1a1a1a; padding: 20px; border-radius: 12px; text-align: center; transition: 0.3s; }
+  .produto:hover { transform: scale(1.05); }
+  .produto img { max-width: 100%; border-radius: 10px; margin-bottom: 15px; }
+  .produto h3 { color: #FFD700; margin-bottom: 10px; }
+  .produto p { margin-bottom: 10px; font-size: 16px; }
+  .produto .preco { font-size: 18px; margin-bottom: 15px; font-weight: bold; }
+  .produto a { display: inline-block; background-color: #FFD700; color: #000; padding: 10px 20px; border-radius: 6px; font-weight: bold; margin: 5px; transition: 0.3s; }
+  .produto a:hover { opacity: 0.8; }
+  .diferenciais { background-color: #222; padding: 60px 20px; text-align: center; }
+  .diferenciais h2 { color: #FFD700; font-size: 32px; margin-bottom: 40px; }
+  .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+  .card { background-color: #1a1a1a; padding: 25px; border-radius: 12px; width: 220px; transition: 0.3s; }
+  .card:hover { transform: translateY(-5px); }
+  .card h3 { color: #FFD700; margin-bottom: 10px; }
+  .card p { font-size: 16px; }
+  .depoimentos { padding: 60px 20px; text-align: center; }
+  .depoimentos h2 { color: #FFD700; font-size: 32px; margin-bottom: 40px; }
+  .depoimento { background-color: #1a1a1a; padding: 20px; border-radius: 12px; margin-bottom: 20px; max-width: 600px; margin-left: auto; margin-right: auto; }
+  .depoimento p { font-style: italic; margin-bottom: 10px; }
+  .depoimento span { font-weight: bold; color: #FFD700; }
+  .whatsapp-banner { background-color: #FFD700; color: #000; text-align: center; padding: 50px 20px; margin: 60px 0; border-radius: 12px; }
+  .whatsapp-banner a { display: inline-block; background-color: #000; color: #FFD700; padding: 15px 30px; border-radius: 8px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+  .whatsapp-banner a:hover { opacity: 0.8; }
+  .footer { background-color: #000; text-align: center; padding: 30px 20px; color: #fff; }
+  .footer a { color: #FFD700; font-weight: bold; }
+  .qr-pix { background-color: #fff; padding: 10px; display: inline-block; border-radius: 8px; margin-top: 10px; }
+</style>
 </head>
 <body>
+
 <header>
-    <h1>JC Império</h1>
-    <nav>
-      <a href="#produtos">Produtos</a>
-      <a href="#diferenciais">Diferenciais</a>
-      <a href="#depoimentos">Depoimentos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <h1>JC Império</h1>
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Contato</a>
+  </nav>
 </header>
+
 <section class="banner">
-    <h2>Os melhores eletrônicos com entrega rápida!</h2>
-    <p>Compre pelo Pix e receba rápido em sua casa.</p>
-    <a href="#produtos">Comprar agora</a>
-    <a href="https://wa.me/5543998694974">Fale no WhatsApp</a>
+  <h2>Eletrônicos de qualidade com entrega rápida!</h2>
+  <p>Compre pelo Pix ou WhatsApp de forma prática e segura.</p>
+  <a href="#produtos">Comprar agora</a>
+  <a href="https://wa.me/5543998694974">Fale no WhatsApp</a>
 </section>
+
 <section class="produtos" id="produtos">
-    <div class="produto">
-      <img src="images/fone.png" alt="Fone Bluetooth">
-      <h3>Fone Bluetooth TWS</h3>
-      <p>R$ 89,90</p>
-      <a href="https://wa.me/5543998694974?text=Quero+comprar+Fone+Bluetooth+TWS">Comprar via WhatsApp</a>
-    </div>
-    <div class="produto">
-      <img src="images/smartwatch.png" alt="Smartwatch">
-      <h3>Smartwatch D20</h3>
-      <p>R$ 149,90</p>
-      <a href="https://wa.me/5543998694974?text=Quero+comprar+Smartwatch+D20">Comprar via WhatsApp</a>
-    </div>
-    <div class="produto">
-      <img src="images/caixa.png" alt="Mini Caixa de Som">
-      <h3>Mini Caixa de Som</h3>
-      <p>R$ 79,90</p>
-      <a href="https://wa.me/5543998694974?text=Quero+comprar+Mini+Caixa+de+Som">Comprar via WhatsApp</a>
-    </div>
+  <div class="produto">
+    <img src="images/fone.png" alt="Fone Bluetooth">
+    <h3>Fone Bluetooth TWS</h3>
+    <p>Excelente qualidade de som e bateria duradoura.</p>
+    <div class="preco">R$ 89,90</div>
+    <a href="https://wa.me/5543998694974?text=Quero+comprar+Fone+Bluetooth+TWS">WhatsApp</a>
+    <a href="#">Pix <div class="qr-pix">Chave Pix: seuemail@pix.com.br</div></a>
+  </div>
+
+  <div class="produto">
+    <img src="images/smartwatch.png" alt="Smartwatch">
+    <h3>Smartwatch D20</h3>
+    <p>Monitoramento de saúde e notificações inteligentes.</p>
+    <div class="preco">R$ 149,90</div>
+    <a href="https://wa.me/5543998694974?text=Quero+comprar+Smartwatch+D20">WhatsApp</a>
+    <a href="#">Pix <div class="qr-pix">Chave Pix: seuemail@pix.com.br</div></a>
+  </div>
+
+  <div class="produto">
+    <img src="images/caixa.png" alt="Mini Caixa de Som">
+    <h3>Mini Caixa de Som</h3>
+    <p>Som potente em um tamanho compacto, perfeita para qualquer ambiente.</p>
+    <div class="preco">R$ 79,90</div>
+    <a href="https://wa.me/5543998694974?text=Quero+comprar+Mini+Caixa+de+Som">WhatsApp</a>
+    <a href="#">Pix <div class="qr-pix">Chave Pix: seuemail@pix.com.br</div></a>
+  </div>
 </section>
+
 <section class="diferenciais" id="diferenciais">
-    <h2>Por que comprar na JC Império?</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Entrega Rápida</h3>
-        <p>Receba seu produto em poucos dias, direto na sua casa.</p>
-      </div>
-      <div class="card">
-        <h3>Pagamento Seguro</h3>
-        <p>Pix confiável e seguro, sem burocracia.</p>
-      </div>
-      <div class="card">
-        <h3>Garantia</h3>
-        <p>Suporte e garantia total para todos os produtos.</p>
-      </div>
-      <div class="card">
-        <h3>Suporte</h3>
-        <p>Atendimento rápido via WhatsApp para tirar todas suas dúvidas.</p>
-      </div>
+  <h2>Por que escolher a JC Império?</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Entrega Rápida</h3>
+      <p>Receba seu produto em poucos dias, direto na sua casa.</p>
     </div>
+    <div class="card">
+      <h3>Pagamento Seguro</h3>
+      <p>Pix e WhatsApp seguros, sem burocracia.</p>
+    </div>
+    <div class="card">
+      <h3>Garantia</h3>
+      <p>Suporte e garantia total para todos os produtos.</p>
+    </div>
+    <div class="card">
+      <h3>Suporte</h3>
+      <p>Atendimento rápido via WhatsApp para tirar todas suas dúvidas.</p>
+    </div>
+  </div>
 </section>
+
 <section class="depoimentos" id="depoimentos">
-    <h2>O que nossos clientes dizem</h2>
-    <div class="depoimento">
-      <p>"Comprei um fone Bluetooth e chegou super rápido! Excelente atendimento."</p>
-      <span>– João S.</span>
-    </div>
-    <div class="depoimento">
-      <p>"O Smartwatch é incrível e o preço foi ótimo! Recomendo demais."</p>
-      <span>– Maria F.</span>
-    </div>
-</section>
-<section class="whatsapp-banner">
-    <h2>Garanta seu produto hoje mesmo!</h2>
-    <a href="https://wa.me/5543998694974">Fale com a gente no WhatsApp</a>
-</section>
-<footer id="contato">
-    <p>Contato via <a href="https://wa.me/5543998694974">WhatsApp</a></p>
-    <p>© 2025 JC Império - Todos os direitos reservados</p>
-</footer>
-</body>
-</html>
+  <h2>O que nossos clientes dizem</h2>
+ 
+
